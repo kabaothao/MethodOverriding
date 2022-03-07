@@ -8,32 +8,13 @@ namespace MethodOverriding
 {
     public class Canvas
     {
-        public void DrawShapes(List<Shape> shapes)
+        public void DrawShapes(List<Shape> shapes) //So the parameter or this method is of type list of shapes so every element of this list is going to be a shape object or an object whose type derives from the shape class.
         {
             foreach (var shape in shapes)
             {
-                switch (shape.Type)
-
-                {
-                    case ShapeType.Circle:
-                    Console.WriteLine("Draw a circle");
-                    break;
-
-
-                    case ShapeType.Rectangle:
-                    Console.WriteLine("Draw a circle");
-                    break;
-
-                    case ShapeType.Triangle:
-                    Console.WriteLine("Draw a circle");
-                    break;
-
-
-                }
+                shape.Draw();
                 
             }
-                
-
 
         }
     }
