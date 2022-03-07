@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MethodOverriding
 {
-    internal class Position
+    public class Position
     {
     }
 }
